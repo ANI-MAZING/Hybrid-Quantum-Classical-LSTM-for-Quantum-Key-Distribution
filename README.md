@@ -39,6 +39,28 @@ The hybrid QLSTM model outperforms classical baselines on this simulated QKD att
 
 These results suggest that incorporating quantum circuit components can improve classification of attack scenarios.
 
+The notebook includes result plots and confusion matrices shown in the screenshots below.
+
+![Dataset and feature summary](Assets/cell2.png)
+Dataset generation and feature extraction details from the BB84 simulation.
+
+![Training metrics](Assets/cell3.png)
+Model training curves showing loss and accuracy over epochs.
+
+![Comparison between models](Assets/cell4.png)
+Performance comparison of the hybrid QLSTM and classical baselines.
+
+![Confusion matrix](Assets/cell5.png)
+Confusion matrix for the hybrid QLSTM model on the test set.
+
+![Final evaluation results](Assets/cell5b.png)
+Overall test results illustrating classification accuracy across attack classes.
+
+## Achievements
+
+- Ranked 1st among state-level AQVH.
+- Finalist in the AQVH national hackathon among more than 3000 projects.
+
 ## Execution
 
 ### Requirements
