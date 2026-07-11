@@ -186,177 +186,19 @@ pip install autoray==0.6.7 pennylane==0.36.0 pennylane-lightning \
 
 ## 🏆 Results Showcase
 
-### Screenshot Guide — Capture These from Your Notebook Output
 
-Follow these instructions to capture and add screenshots that demonstrate the project's results:
 
-#### **Screenshot 1: Dataset Generation Summary** ✅
-**From:** Cell 2 output (after dataset generation completes)
-**What to capture:** The table showing class distribution and sample statistics
-```
-Dataset shape: (10329, 12)
-Class distribution: Shows all 8 classes with 1,292-1,291 samples each
-Sample stats vs paper Table VI: Shows key_len, qber, sig_det, dec_loss
-```
-**Instructions:**
-- Run Cell 2 completely
-- Scroll down to see the final output table
-- Take a screenshot of the entire output block showing ✓ checkmarks and statistics
-- **Save as:** `results/01-dataset-generation.png`
 
-**Placement in README:** Add after this section as:
 ```markdown
-![Dataset Generation Summary](results/01-dataset-generation.png)
+![Dataset Generation Summary](Assets/cell2.png)
+![Dataset Generation Summary](Assets/cell3.png)
+![Dataset Generation Summary](Assets/cell4.png)
+![Dataset Generation Summary](Assets/cell5.png)
+![Dataset Generation Summary](Assets/cell5b.png)
 ```
 
----
 
-#### **Screenshot 2: Data Preprocessing Confirmation** ✅
-**From:** Cell 3 output (preprocessing summary)
-**What to capture:** The preprocessing summary showing train/test split and class mapping
-```
-✅ Features selected : 9 ['key_length', 'qber', ...]
-✅ Train samples : 1,549 (80%)
-✅ Test samples : 8,780 (20%)
-Class → Index mapping: All 8 classes listed
-```
-**Instructions:**
-- Run Cell 3 completely
-- Look for the green checkmarks (✅) section
-- Capture the entire summary block
-- **Save as:** `results/02-data-preprocessing.png`
 
-**Placement in README:** Add after the Dataset section
-
----
-
-#### **Screenshot 3: Training Progress — Epoch-by-Epoch Advantage** ✅
-**From:** Cell 5 output (training loop results)
-**What to capture:** The training output showing 10 epochs with accuracy and quantum advantage
-```
-Epoch 1  | Hybrid: 70.0% | Classical: 26.4% | Advantage: +43.6%
-Epoch 2  | Hybrid: 77.6% | Classical: 49.3% | Advantage: +28.3%
-...
-Epoch 10 | Hybrid: 96.7% | Classical: 93.1% | Advantage: +3.6%
-```
-**Instructions:**
-- Run Cell 5 completely (training)
-- Scroll to see all 10 epochs
-- Capture the entire training output table
-- This shows the **quantum advantage converging over epochs**
-- **Save as:** `results/03-training-epochs.png`
-
-**Placement in README:** This is the KEY result showing quantum advantage!
-
----
-
-#### **Screenshot 4: Confusion Matrices — Side-by-Side Comparison** 🏆
-**From:** Cell 6 output (the 2-heatmap figure)
-**What to capture:** The two confusion matrix heatmaps
-```
-Left: Hybrid QLSTM (Acc: 98.4%) — Blue heatmap
-Right: Classical LSTM (Acc: 97.9%) — Green heatmap
-```
-**Instructions:**
-- Run Cell 6 completely
-- You'll see two side-by-side 8×8 heatmaps
-- The QLSTM matrix should have darker diagonal (higher accuracy)
-- Capture both matrices in one screenshot
-- **Save as:** `results/04-confusion-matrices.png`
-
-**Placement in README:** This is the VISUAL proof of performance
-
----
-
-#### **Screenshot 5 (Optional): Final Accuracy Verification** ✅
-**From:** Cell 6 bottom output
-**What to capture:** The final accuracy comparison
-```
-✅ VERIFIED HYBRID ACCURACY: 98.40%
-✅ VERIFIED CLASSICAL ACCURACY: 97.90%
-🚀 TRUE QUANTUM ADVANTAGE: +0.50%
-```
-**Instructions:**
-- This appears at the bottom of Cell 6
-- Simple text output with the final numbers
-- **Save as:** `results/05-final-accuracy.png`
-
-**Placement in README:** Quick summary stat
-
----
-
-### How to Add Screenshots to Your README
-
-1. **Create a folder** in your project directory:
-   ```bash
-   mkdir -p results
-   ```
-
-2. **Place screenshots** in `/Users/aniruddhagharat/Programming/Research/BE Major Project/results/`
-
-3. **Add to README** using this syntax:
-   ```markdown
-   ![Description](results/01-dataset-generation.png)
-   ```
-
-4. **Example of how it will look:**
-   ```markdown
-   ### Dataset Summary
-   ![Dataset Generation showing 10,329 samples across 8 classes](results/01-dataset-generation.png)
-   ```
-
----
-
-### Suggested Layout — Where to Add Each Screenshot
-
-Here's where each screenshot should go in the README:
-
-```
-📁 BE Major Project/
-│
-├── README.md
-│   ├── Overview
-│   ├── What This Project Does
-│   ├── 🏆 Results Showcase ← ADD SECTION HERE
-│   │   ├── Screenshot 1: Dataset [results/01-dataset-generation.png]
-│   │   ├── Screenshot 2: Preprocessing [results/02-data-preprocessing.png]
-│   │   ├── Screenshot 3: Training Progress [results/03-training-epochs.png]
-│   │   ├── Screenshot 4: Confusion Matrices [results/04-confusion-matrices.png]
-│   │   └── Screenshot 5: Final Accuracy [results/05-final-accuracy.png]
-│   ├── Quick Start
-│   └── ... rest of README
-│
-└── results/ ← CREATE THIS FOLDER
-    ├── 01-dataset-generation.png
-    ├── 02-data-preprocessing.png
-    ├── 03-training-epochs.png
-    ├── 04-confusion-matrices.png
-    └── 05-final-accuracy.png
-```
-
----
-
-### Quick Checklist for Screenshots
-
-- [ ] **Dataset Generation** — Shows 10,329 samples, 8 classes balanced
-- [ ] **Data Preprocessing** — Shows 1,549 train / 8,780 test split
-- [ ] **Training Epochs** — Shows Hybrid reaching 96.7%, Classical 93.1%
-- [ ] **Confusion Matrices** — Shows QLSTM (98.4%) vs LSTM (97.9%)
-- [ ] **Final Accuracy** — Shows quantum advantage of +0.5-3.6%
-
----
-
-## 🎯 What These Screenshots Prove
-
-| Screenshot | What It Demonstrates |
-|:---|:---|
-| Dataset | **Reproducible setup** — 10K samples across balanced attack scenarios |
-| Preprocessing | **Clean pipeline** — proper train/test split avoids data leakage |
-| Training Progress | **Quantum advantage emerges** — QLSTM outperforms classical baselines |
-| Confusion Matrices | **Strong generalization** — high diagonal accuracy on held-out test set |
-| Final Accuracy | **Verified results** — quantifies the quantum edge (3-6% improvement) |
-
----
 
 ## 🔮 Quantum Circuit Details
 
